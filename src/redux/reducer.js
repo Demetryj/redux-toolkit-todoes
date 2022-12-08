@@ -36,6 +36,6 @@ const filtersInitialState = {
 
 export const filtersReducer = createReducer(filtersInitialState, {
   [setFilter]: (state, action) => {
-    state.status = action.payload.status;
+    state.status = action.payload;
   },
 });
